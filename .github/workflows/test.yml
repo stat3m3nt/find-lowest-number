@@ -23,10 +23,10 @@ jobs:
 
       - name: Test with one number
         run: |
-          python3 find_lowes_number.py test_data/test2_input.txt test2_output.txt
+          python3 find_lowest_number.py test_data/test2_input.txt test2_output.txt
           diff test_data/test2_expected.txt test2_output.txt
 
-      - name: Test with bllank file
+      - name: Test with blank file
         run: |
           python3 find_lowest_number.py test_data/test3_input.txt test3_output.txt
           diff test_data/test3_expected.txt test3_output.txt 
